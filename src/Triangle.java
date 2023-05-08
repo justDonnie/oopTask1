@@ -1,11 +1,12 @@
 public class Triangle {
-    int a;
-    int b;
-    int c;
+    double a;
+    double b;
+    double c;
 
 
     public void area(){
-        System.out.println((a+b+c)/2+" area of triangle");
+        double p = (a+b+c)/2;
+        System.out.println(Math.sqrt(p*(p-a)*(p-b)*(p-c))+" triangles area");
 
     }
 
